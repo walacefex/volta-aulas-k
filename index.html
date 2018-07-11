@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Volta às Aulas Kalunga</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://scripts.kalunga.com.br/maxcdn/fontawesome5/web-fonts-with-css/css/fontawesome-all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="owl-carousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owl-carousel/owl.theme.default.min.css">
+<script src="owl-carousel/owl.carousel.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="hotsite">
+	<!-- HEADER -->
+	<header>
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-12 col-sm-6 col-lg-4">
+					<h1>Volta às Aulas</h1>
+				</div>
+				
+				<div class="col-12 col-sm-6 col-lg-3 col-xl-4 align-self-center d-none d-sm-block">
+					<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/parcelamento-mva.png" alt="Produtos em até 12x sem juros" class="d-block m-auto w-100" id="parcelamento" />
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!-- BUSCA -->
+	<section class="container-fluid" id="buscaHotsite">
+		<div class="row justify-content-center">
+			<form class="form-inline col-12 col-md-6 my-2">
+				<div class="form-group mw-100 w-100 mb-0 row no-gutters justify-content-center">
+					<div class="col-8 p-0">
+						<input type="search" class="form-control w-100" id="buscaHotsiteVA" name="txtBuscaProd" placeholder="Faça sua busca por material aqui" onkeyup="return (event.keyCode || event.which) == 13 ? Redirect('/busca/'.concat(this.value.FormatSearch(),'/1')) : null;">
+					</div>
+					<div class="p-0 ml-1" id="btnBuscaVA">
+						<button type="submit" class="btn d-block w-100" onclick="fnSearch()">BUSCAR</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	
+	<!-- CATEGORIAS -->
+	<nav id="categoriasHotsite">
+		<div class="container">
+			<div class="row p-4 p-md-0 pb-md-4">
+				<h2 class="col-12 m-auto d-md-none titulo-magenta">Categorias</h2>
+				
+				<!-- ESCRITA E CORRETIVOS -->
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-md-3 mt-4" id="blocoCategoria1">
+					<div class="bloco-categoria py-3 py-md-4 pr-3 h-100 navbar-expand-md">
+						<h3 class="d-none d-md-inline-block pl-4 pb-1">Escrita e Corretivos</h3>
+						<a class="d-block d-md-none"><h3 class="d-block pl-4 pb-0 mb-0" data-toggle="collapse" aria-expanded="false" data-target="#menuCategoria1">Escrita e Corretivos<i class="fa fa-chevron-down transition-ease-mb"></i></h3></a>
+						<div class="collapse navbar-collapse" id="menuCategoria1">
+							<ul class="nav flex-column mt-2 mt-md-0">
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/apontadores">Apontadores</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/borrachas">Borrachas</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/canetas-esferograficas">Canetas Esferográficas</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/corretivos">Corretivos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/lapis-preto">Lápis Preto</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/lapiseiras">Lapiseiras</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/marca-texto">Marca-texto</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<!-- ARTE E PINTURA -->
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-md-3 mt-2 mt-md-4" id="blocoCategoria2">
+					<div class="bloco-categoria py-3 py-md-4 pr-3 h-100 navbar-expand-md">
+						<h3 class="d-none d-md-inline-block pl-4 pb-1">Arte e Pintura</h3>
+						<a class="d-block d-md-none"><h3 class="d-block pl-4 pb-0 mb-0" data-toggle="collapse" aria-expanded="false" data-target="#menuCategoria2">Arte e Pintura<i class="fa fa-chevron-down transition-ease-mb"></i></h3></a>
+						<div class="collapse navbar-collapse" id="menuCategoria2">
+							<ul class="nav flex-column mt-2 mt-md-0">
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/canetas-hidrograficas">Canetas Hidrográficas</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/colas">Colas</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/giz-de-cera">Giz de Cera</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/lapis-de-cor">Lápis de Cor</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/maletas-para-colorir">Maletas para Colorir</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/massas-para-modelar">Massa para Modelar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/tesouras">Tesouras</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/tinta-guache">Tinta Guache</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<!-- PROFESSORES -->
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-md-3 mt-2 mt-md-4" id="blocoCategoria3">
+					<div class="bloco-categoria py-3 py-md-4 pr-3 h-100 navbar-expand-md">
+						<h3 class="d-none d-md-inline-block pl-4 pb-1">Professores</h3>
+						<a class="d-block d-md-none"><h3 class="d-block pl-4 pb-0 mb-0" data-toggle="collapse" aria-expanded="false" data-target="#menuCategoria3">Professores<i class="fa fa-chevron-down transition-ease-mb"></i></h3></a>
+						<div class="collapse navbar-collapse" id="menuCategoria3">
+							<ul class="nav flex-column mt-2 mt-md-0">
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/aventais">Aventais</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/diarios-de-classe">Diários de Classe</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/giz-e-apagadores">Giz e Apagadores</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/pinceis-quadro-branco">Pincéis Quadro Branco</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/quadros">Quadros Escolares</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<!-- CADERNOS E AGENDAS -->
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-md-3 mt-2 mt-md-4" id="blocoCategoria4">
+					<div class="bloco-categoria py-3 py-md-4 pr-3 h-100 navbar-expand-md">
+						<h3 class="d-none d-md-inline-block pl-4 pb-1">Cadernos e Agendas</h3>
+						<a class="d-block d-md-none"><h3 class="d-block pl-4 pb-0 mb-0" data-toggle="collapse" aria-expanded="false" data-target="#menuCategoria4">Cadernos e Agendas<i class="fa fa-chevron-down transition-ease-mb"></i></h3></a>
+						<div class="collapse navbar-collapse" id="menuCategoria4">
+							<ul class="nav flex-column mt-2 mt-md-0">
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/agendas-escolares">Agendas Escolares</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/cadernos">Cadernos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/contact">Contact</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/ficharios">Fichários</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<!-- MOCHILAS E LANCHEIRAS -->
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-md-3 mt-2 mt-md-4" id="blocoCategoria5">
+					<div class="bloco-categoria py-3 py-md-4 pr-3 h-100 navbar-expand-md">
+						<h3 class="d-none d-md-inline-block pl-4 pb-1">Mochilas e Lancheiras</h3>
+						<a class="d-block d-md-none"><h3 class="d-block pl-4 pb-0 mb-0" data-toggle="collapse" aria-expanded="false" data-target="#menuCategoria5">Mochilas e Lancheiras<i class="fa fa-chevron-down transition-ease-mb"></i></h3></a>
+						<div class="collapse navbar-collapse" id="menuCategoria5">
+							<ul class="nav flex-column mt-2 mt-md-0">
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/estojos">Estojos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/lancheiras">Lancheiras</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/mochilas-infantis">Mochilas Infantis</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/mochilas-juvenis">Mochilas Juvenis</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<!-- ELETRÔNICOS -->
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-md-3 mt-2 mt-md-4" id="blocoCategoria6">
+					<div class="bloco-categoria py-3 py-md-4 pr-3 h-100 navbar-expand-md">
+						<h3 class="d-none d-md-inline-block pl-4 pb-1">Eletrônicos</h3>
+						<a class="d-block d-md-none"><h3 class="d-block pl-4 pb-0 mb-0" data-toggle="collapse" aria-expanded="false" data-target="#menuCategoria6">Eletrônicos<i class="fa fa-chevron-down transition-ease-mb"></i></h3></a>
+						<div class="collapse navbar-collapse" id="menuCategoria6">
+							<ul class="nav flex-column mt-2 mt-md-0">
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/computadores">Computadores</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/impressoras">Impressoras e Multifuncionais</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/midias">Mídias</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/notebooks">Notebooks</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/projetores">Projetores</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/smartphones">Smartphones</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/tablets">Tablets</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<!-- PAPÉIS E PASTAS -->
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-md-3 mt-2 mt-md-4" id="blocoCategoria7">
+					<div class="bloco-categoria py-3 py-md-4 pr-3 h-100 navbar-expand-md">
+						<h3 class="d-none d-md-inline-block pl-4 pb-1">Papéis e Pastas</h3>
+						<a class="d-block d-md-none"><h3 class="d-block pl-4 pb-0 mb-0" data-toggle="collapse" aria-expanded="false" data-target="#menuCategoria7">Papéis e Pastas<i class="fa fa-chevron-down transition-ease-mb"></i></h3></a>
+						<div class="collapse navbar-collapse" id="menuCategoria7">
+							<ul class="nav flex-column mt-2 mt-md-0">
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/papel-almaco">Papel Almaço</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/papel-sulfite">Papel Sulfite</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/pastas">Pastas</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<!-- MATERIAL TÉCNICO -->
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-md-3 mt-2 mt-md-4" id="blocoCategoria8">
+					<div class="bloco-categoria py-3 py-md-4 pr-3 h-100 navbar-expand-md">
+						<h3 class="d-none d-md-inline-block pl-4 pb-1">Material Técnico</h3>
+						<a class="d-block d-md-none"><h3 class="d-block pl-4 pb-0 mb-0" data-toggle="collapse" aria-expanded="false" data-target="#menuCategoria8">Material Técnico<i class="fa fa-chevron-down transition-ease-mb"></i></h3></a>
+						<div class="collapse navbar-collapse" id="menuCategoria8">
+							<ul class="nav flex-column mt-2 mt-md-0">
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/blocos-tecnicos">Blocos Técnicos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/compassos">Compassos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-1 pl-4 pr-0 transition-ease" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/reguas">Réguas</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+	
+	<!-- SEÇÃO CINZA -->
+	<section id="areaCinzaHotsite">
+		<!-- MOSAICO -->
+		<section class="container" id="mosaicoHotsite">
+			<div class="row py-4 py-md-5">
+				<h2 class="col-12 titulo-cinza px-5 px-md-3 mb-0">Tudo o que você precisa em um só lugar!</h2>
+			</div>
+			
+			<div class="row mb-3">
+				<div class="col-12">
+					<a href="#"><img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/banner-descontos-mva.png" alt="Material escolar com desconto, confira!" class="mw-100 w-100 d-none d-md-block"><img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/banner-descontos-mva-mb.png" alt="Material escolar com desconto, confira!" class="mw-100 w-100 d-block d-md-none"></a>
+				</div>
+			</div>
+			
+			<!-- BOTÕES MOSAICO -->
+			<div class="row no-gutters mb-5">
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/papel-sulfite" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-sulfite.png" alt="Papel Sulfite" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0 remove-margin">
+							<div class="col-8 p-0"><span>Papel</span><span>Sulfite</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/canetas-esferograficas" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-canetas.png" alt="Canetas" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0">
+							<div class="col-8 p-0"><span>Canetas</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/cadernos" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-cadernos.png" alt="Cadernos" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0">
+							<div class="col-8 p-0"><span>Cadernos</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/colas" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-colas.png" alt="Colas" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0">
+							<div class="col-8 p-0"><span>Colas</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/ficharios" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-ficharios.png" alt="Fichários" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0">
+							<div class="col-8 p-0"><span>Fichários</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/canetas-hidrograficas" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-canetinhas.png" alt="Canetinhas" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0">
+							<div class="col-8 p-0"><span>Canetinhas</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/lancheiras" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-lancheiras.png" alt="Lancheiras" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0">
+							<div class="col-8 p-0"><span>Lancheiras</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/lapis-de-cor" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-lapis-de-cor.png" alt="Lápis de Cor" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0 remove-margin">
+							<div class="col-8 p-0"><span>Lápis</span><span>de Cor</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/lapiseiras" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-lapiseiras.png" alt="Lapiseiras" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0">
+							<div class="col-8 p-0"><span>Lapiseiras</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/mochilas-juvenis" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-mochilas.png" alt="Mochilas" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0">
+							<div class="col-8 p-0"><span>Mochilas</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/borrachas" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-borrachas.png" alt="Borrachas" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0">
+							<div class="col-8 p-0"><span>Borrachas</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/giz-de-cera" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-giz-de-cera.png" alt="Giz de Cera" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0 remove-margin">
+							<div class="col-8 p-0"><span>Giz de</span><span>Cera</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/midias" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-midias.png" alt="Mídias" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0">
+							<div class="col-8 p-0"><span>Mídias</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/impressoras" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-impressoras.png" alt="Impressoras" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0">
+							<div class="col-8 p-0"><span>Impressoras</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/pinceis-quadro-branco" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-pinceis-quadro-branco.png" alt="Princéis Quadro Branco" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0 remove-margin-double">
+							<div class="col-8 p-0"><span>Pincéis</span><span>Quadro</span><span>Branco</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/notebooks" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-notebooks.png" alt="Notebooks" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0">
+							<div class="col-8 p-0"><span>Notebooks</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/estojos" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-estojos.png" alt="Estojos" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0">
+							<div class="col-8 p-0"><span>Estojos</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="d-inline-block bloco-mosaico">
+					<a href="https://www.kalunga.com.br/hotsite/volta-as-aulas/contact" class="d-block h-100 transition-ease">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/mosaico/m-contact.png" alt="Contact" class="mw-100 w-100">
+						<div class="info-bloco-mosaico row align-items-end m-0">
+							<div class="col-8 p-0"><span>Contact</span></div>
+							<div class="col p-0 btn-bloco-mosaico">
+								<button class="btn p-0 bg-white">&raquo;</button>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		
+		<!-- PRODUTOS -->
+		<section class="container pt-lg-3" id="produtosHotsite">
+			<div class="row">
+				<h2 class="col-12 titulo-magenta">Os Mais Procurados</h2>
+			</div>
+			
+			<div class="row no-gutters p-2 p-md-0 mt-4 owl-carousel" id="blocosProdutos">
+				<div class="bloco-produto">
+					<a href="#" class="d-block h-100 p-4">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/produtos/p-exemplo.png" alt="Papel Sulfite Chamequinho com 50% de desconto" class="mw-100 w-100">
+						<div class="mt-3">
+							<h3 class="mb-3">Papel Sulfite Chamequinho<br><small>A4 210x297mm 75g - 100 folhas</small></h3>
+							<p>De <s>R$ 99,00</s>
+							<br>Por <b>R$ <span>49</span>,50</b></p>
+							<button class="btn w-100">Confira &raquo;</button>
+						</div>
+					</a>
+				</div>
+				
+				<div class="bloco-produto">
+					<a href="#" class="d-block h-100 p-4">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/produtos/p-exemplo.png" alt="Papel Sulfite Chamequinho com 50% de desconto" class="mw-100 w-100">
+						<div class="mt-3">
+							<h3 class="mb-3">Papel Sulfite Chamequinho<br><small>A4 210x297mm 75g - 100 folhas</small></h3>
+							<p>De <s>R$ 99,00</s>
+							<br>Por <b>R$ <span>49</span>,50</b></p>
+							<button class="btn w-100">Confira &raquo;</button>
+						</div>
+					</a>
+				</div>
+				
+				<div class="bloco-produto">
+					<a href="#" class="d-block h-100 p-4">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/produtos/p-exemplo.png" alt="Papel Sulfite Chamequinho com 50% de desconto" class="mw-100 w-100">
+						<div class="mt-3">
+							<h3 class="mb-3">Papel Sulfite Chamequinho<br><small>A4 210x297mm 75g - 100 folhas</small></h3>
+							<p>De <s>R$ 99,00</s>
+							<br>Por <b>R$ <span>49</span>,50</b></p>
+							<button class="btn w-100">Confira &raquo;</button>
+						</div>
+					</a>
+				</div>
+				
+				<div class="bloco-produto">
+					<a href="#" class="d-block h-100 p-4">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/produtos/p-exemplo.png" alt="Papel Sulfite Chamequinho com 50% de desconto" class="mw-100 w-100">
+						<div class="mt-3">
+							<h3 class="mb-3">Papel Sulfite Chamequinho<br><small>A4 210x297mm 75g - 100 folhas</small></h3>
+							<p>De <s>R$ 99,00</s>
+							<br>Por <b>R$ <span>49</span>,50</b></p>
+							<button class="btn w-100">Confira &raquo;</button>
+						</div>
+					</a>
+				</div>
+				
+				<div class="bloco-produto">
+					<a href="#" class="d-block h-100 p-4">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/produtos/p-exemplo.png" alt="Papel Sulfite Chamequinho com 50% de desconto" class="mw-100 w-100">
+						<div class="mt-3">
+							<h3 class="mb-3">Papel Sulfite Chamequinho<br><small>A4 210x297mm 75g - 100 folhas</small></h3>
+							<p>De <s>R$ 99,00</s>
+							<br>Por <b>R$ <span>49</span>,50</b></p>
+							<button class="btn w-100">Confira &raquo;</button>
+						</div>
+					</a>
+				</div>
+				
+			</div>
+		</section>
+
+	</section>
+	
+	<!-- MARCAS E LOJAS -->
+	<section class="pb-4 pb-md-5" id="especiaisHotsite">
+		<!-- MARCAS -->
+		<section class="container clearfix" id="marcasEspeciais">
+			<div class="row pt-3 pt-md-5 pb-3">
+				<h2 class="col-12 titulo-branco">Marcas Especiais</h2>
+			</div>
+			
+			<div class="row no-gutters p-2 p-md-0 owl-carousel" id="blocosMarcas">
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/spiral-tdm/00005291/0001">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-turma-da-monica.jpg" alt="Cadernos Turma da Mônica">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/spiral-tdj/00005311/0001">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-turma-da-monica-jovem.jpg" alt="Cadernos Turma da Mônica Jovem">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/spiral-bc/00005288/0001">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-barcelona.jpg" alt="Cadernos FC Barcelona">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/spiral-ps/00005310/0001">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-playstation.jpg" alt="Cadernos PlayStation">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/spiral-ap/00000088/0001">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-animal-planet.jpg" alt="Cadernos Animal Planet">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/spiral-ang/00000130/0001">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-angels.jpg" alt="Cadernos Angels">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/busca/my-cat/1">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-my-cat.jpg" alt="Cadernos My Cat">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/spiral-sn/00005263/0001">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-scribble-nauts.jpg" alt="Cadernos Scribble Nauts">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/spiral-jok/00005260/0001">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-the-joker.jpg" alt="Cadernos The Joker">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/spiral-sk/00005257/0001">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-sarah-kay.jpg" alt="Cadernos Sarah Kay">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/spiral-pf/00005258/0001">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-pussyfoot.jpg" alt="Cadernos Pussyfoot">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/spiral-mv/00005238/0001">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-marvel-comics.jpg" alt="Cadernos Marvel Comics">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/busca/spiral-femmina/1">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-femmina.jpg" alt="Cadernos Femmina">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/busca/spiral-zen/1">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-zen.jpg" alt="Cadernos Zen">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/spiral-mm/00005225/0001">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-meme-maniacs.jpg" alt="Cadernos Meme Maniacs">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/busca/hard-cover-spiral/1">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-hard-cover.jpg" alt="Cadernos Hard Cover">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/busca/pop-pet-spiral/1">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-pop-pet.jpg" alt="Cadernos Pop Pet">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/busca/natureza-viva-spiral/1">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-natureza-viva.jpg" alt="Cadernos Natureza Viva">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/busca/brief-case-spiral/1">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-brief-case.jpg" alt="Cadernos Brief Case">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/spiral-tm/00007716/0001">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-tarso-marques.jpg" alt="Cadernos Tarso Marques">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/busca/liberdade-de-expressao-spiral/1">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-liberdade-de-expressao.jpg" alt="Cadernos Liberdade de Expressão">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/busca/imagem-e-mensagem-spiral/1">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-imagem-e-mensagem.jpg" alt="Cadernos Imagem e Mensagem">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/busca/spiral-action-sports/1">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-action-e-sports.jpg" alt="Cadernos Action & Sports">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/busca/spiral-for-girls/1">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-for-girls.jpg" alt="Cadernos For Girls">
+					</a>
+				</div>
+				
+				<div class="bg-white bloco-marcas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/spiral-mad/00005259/0001">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/marcas/marca-mad.jpg" alt="Cadernos Mad">
+					</a>
+				</div>
+			</div>
+		</section>
+		
+		<!-- LOJAS -->
+		<section class="container" id="lojasEspeciais">
+			<div class="row pt-3 pt-md-5 pb-3">
+				<h2 class="col-12 titulo-branco">Lojas Especiais</h2>
+			</div>
+			
+			<div class="row no-gutters p-2 p-md-0 owl-carousel" id="blocosLojas">
+				<div class="bloco-lojas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/ipaper/52736949/0001" class="d-block p-2 p-sm-3">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/lojas/loja-ipaper.png" alt="International Paper">
+					</a>
+				</div>
+				
+				<div class="bloco-lojas transition-ease">
+					<a href="https://www.kalunga.com.br/hotsite/spiral/" class="d-block p-2 p-sm-3">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/lojas/loja-spiral.png" alt="Spiral">
+					</a>
+				</div>
+				
+				<div class="bloco-lojas transition-ease">
+					<a href="https://www.kalunga.com.br/hotsite/bic" class="d-block p-2 p-sm-3">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/lojas/loja-bic.png" alt="Bic">
+					</a>
+				</div>
+				
+				<div class="bloco-lojas transition-ease">
+					<a href="https://www.kalunga.com.br/hotsite/faber-castell" class="d-block p-2 p-sm-3">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/lojas/loja-faber-castell.png" alt="Faber Castell">
+					</a>
+				</div>
+				
+				<div class="bloco-lojas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/henkel/02777131/0001" class="d-block p-2 p-sm-3">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/lojas/loja-pritt.png" alt="Pritt">
+					</a>
+				</div>
+				
+				<div class="bloco-lojas transition-ease">
+					<a href="https://www.kalunga.com.br/marca/pentel/00006220/0001" class="d-block p-2 p-sm-3">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/lojas/loja-pentel.png" alt="Pentel">
+					</a>
+				</div>
+				
+				<div class="bloco-lojas transition-ease">
+					<a href="#" class="d-block p-2 p-sm-3">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/lojas/loja-pentel.png" alt="Pentel">
+					</a>
+				</div>
+				
+				<div class="bloco-lojas transition-ease">
+					<a href="#" class="d-block p-2 p-sm-3">
+						<img src="https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/lojas/loja-pentel.png" alt="Pentel">
+					</a>
+				</div>
+			</div>
+		</section>
+	</section>
+</div>
+
+<script>
+$(document).ready(function(){
+  $(".owl-carousel#blocosProdutos").owlCarousel({
+	loop:true,
+	margin:30,
+	nav:true,
+	navText:['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
+	responsive:{
+		0:{
+			items:1
+		},
+		468:{
+			items:2
+		},
+		992:{
+			items:4
+		}
+	}
+  });
+  $(".owl-carousel#blocosMarcas").owlCarousel({
+	loop:true,
+	margin:16,
+	nav:true,
+	navText:['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
+	responsive:{
+		0:{
+			items:1
+		},
+		300:{
+			items:2
+		},
+		768:{
+			items:4
+		},
+		992:{
+			items:6
+		},
+		1200:{
+			items:7
+		}
+	}
+  });
+  $(".owl-carousel#blocosLojas").owlCarousel({
+	loop:true,
+	margin:20,
+	nav:true,
+	navText:['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
+	responsive:{
+		0:{
+			items:1
+		},
+		300:{
+			items:2
+		},
+		768:{
+			items:3
+		},
+		992:{
+			items:5
+		},
+		1200:{
+			items:6
+		}
+	}
+  });
+});
+</script>
+
+</body>
+</html>

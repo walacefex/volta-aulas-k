@@ -1,0 +1,495 @@
+/* Stylesheet Document */
+#hotsite .transition-ease,
+#hotsite .transition-ease * {
+	-webkit-transition: .2s ease all;
+	-moz-transition: .2s ease all;
+	transition: .2s ease all;
+}
+#hotsite .transition-ease-mb,
+#hotsite .transition-ease-mb * {
+	-webkit-transition: .5s ease all;
+	-moz-transition: .5s ease all;
+	transition: .5s ease all;
+}
+#hotsite h2 {
+	font-size: 1.625rem;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+}
+#hotsite h3 {
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+#hotsite .titulo-magenta {
+	color: #c8134a;
+}
+#hotsite .titulo-magenta::after {
+	content:'';
+	background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/detalhe-titulo-magenta-mva.svg);
+	display: block;
+	height: 10px;
+	margin: 12px auto 0;
+	width: 66px;
+}
+#hotsite .titulo-cinza {
+	color: #333;
+}
+#hotsite .titulo-cinza::after {
+	content:'';
+	background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/detalhe-titulo-cinza-mva.svg);
+	display: block;
+	height: 10px;
+	margin: 12px auto 0;
+	width: 66px;
+}
+#hotsite .titulo-branco {
+	color: white;
+}
+#hotsite .titulo-branco::after {
+	content:'';
+	background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/detalhe-titulo-branco-mva.svg);
+	display: block;
+	height: 10px;
+	margin: 12px auto 0;
+	width: 66px;
+}
+/* HEADER ---------- */
+#hotsite > header {
+	background-color: #f6a426;
+	border-bottom: 1px solid #a96417;
+}
+#hotsite > header h1 {
+	background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/logo-mini-volta-as-aulas-2018.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	height: 120px;
+	margin: 24px auto;
+	max-width: 312px;
+	text-indent: -9999px;
+	width: 100%;
+}
+#hotsite > header #parcelamento {
+	max-width: 225px;
+}
+/* BUSCA ---------- */
+#hotsite #buscaHotsite {
+	background-color: #dc8528;
+}
+#hotsite #buscaHotsite #buscaHotsiteVA {
+	border-color: white;
+}
+#hotsite #buscaHotsite #btnBuscaVA {
+	max-width: calc(33.33% - .25rem);
+}
+#hotsite #buscaHotsite button {
+	background-color: #c8134a;
+	color: white;
+	font-weight: bold;
+}
+/* MENU CATEGORIAS ---------- */
+#hotsite #categoriasHotsite {
+	background-color: white;
+}
+#hotsite #categoriasHotsite .bloco-categoria {
+	background-color: white;
+	border: 1px solid #e4e4e4;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+#hotsite #categoriasHotsite .bloco-categoria h3 .fa-chevron-down {
+	margin-top: 2px;
+	position: absolute;
+    right: 1.5rem;
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+#hotsite #categoriasHotsite .bloco-categoria h3[aria-expanded=false] .fa-chevron-down {
+	-ms-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+#hotsite #categoriasHotsite ul {
+	font-size: 0.875rem;
+}
+#hotsite #categoriasHotsite ul a {
+	color: #666;
+}
+#hotsite #categoriasHotsite #blocoCategoria1 h3 {
+	color: #e83e8c;
+}
+#hotsite #categoriasHotsite #blocoCategoria2 h3 {
+	color: #fd7e14;
+}
+#hotsite #categoriasHotsite #blocoCategoria3 h3 {
+	color: #007bff;
+}
+#hotsite #categoriasHotsite #blocoCategoria4 h3 {
+	color: #dc3545;
+}
+#hotsite #categoriasHotsite #blocoCategoria5 h3 {
+	color: #6f42c1;
+}
+#hotsite #categoriasHotsite #blocoCategoria6 h3 {
+	color: #28a745;
+}
+#hotsite #categoriasHotsite #blocoCategoria7 h3 {
+	color: #17a2b8;
+}
+#hotsite #categoriasHotsite #blocoCategoria8 h3 {
+	color: #6610f2;
+}
+/* MOSAICO E PRODUTOS ---------- */
+#hotsite #areaCinzaHotsite {
+	background-color: #e4e4e4;
+	background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/bg-green-mva.jpg);
+	background-position: bottom center;
+	background-repeat: repeat-x;
+}
+/* MOSAICO ----- */
+#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico {
+	background-color: #47af9e;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin: 1px;
+	max-width: calc(100% / 2 - 2px);
+	width: 100%;
+}
+#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico a {
+	color: white;
+	padding: 14px;
+}
+#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico a:hover {
+	text-decoration: none;
+}
+#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico .info-bloco-mosaico.remove-margin {
+	margin-top: -21px !important;
+}
+#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico .info-bloco-mosaico.remove-margin-double {
+	margin-top: -42px !important;
+}
+#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico .info-bloco-mosaico > div span {
+	background-color: #333;
+	display: table;
+	font-size: 1.125rem;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 1.3;
+	padding: 0 2px;
+}
+#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico .info-bloco-mosaico .btn-bloco-mosaico {
+	text-align: right;
+}
+#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico .info-bloco-mosaico .btn-bloco-mosaico button {
+	color: #c8134a;
+	font-weight: bold;
+	-webkit-transform: translateX(-20px);
+	-ms-transform: translateX(-20px);
+	transform: translateX(-20px);
+	width: 26px;
+	opacity: 0;
+}
+/* OWL CAROUSEL ----- */
+#hotsite .owl-carousel .owl-nav button.owl-next,
+#hotsite .owl-carousel .owl-nav button.owl-prev {
+	position: absolute;
+    top: calc(50% - 24px);
+}
+#hotsite .owl-carousel .owl-nav button.owl-prev {left:-10px;}
+#hotsite .owl-carousel .owl-nav button.owl-next {right:-10px;}
+#hotsite #especiaisHotsite .owl-carousel .owl-nav button.owl-next,
+#hotsite #especiaisHotsite .owl-carousel .owl-nav button.owl-prev {
+	color: white;
+}
+
+#hotsite #especiaisHotsite .owl-carousel .owl-nav .fa {font-size:1.125rem;}
+/* PRODUTOS ----- */
+#hotsite #areaCinzaHotsite #produtosHotsite .bloco-produto a {
+	background-color: white;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	color: #666;
+	font-size: 0.875rem;
+}
+#hotsite #areaCinzaHotsite #produtosHotsite .bloco-produto a:hover {
+	text-decoration: none;
+}
+#hotsite #areaCinzaHotsite #produtosHotsite .bloco-produto a h3 {
+	color: #333;
+	font-size: 1rem;
+}
+#hotsite #areaCinzaHotsite #produtosHotsite .bloco-produto a h3 small {
+	color: #666;
+	font-size: 0.875rem;
+}
+#hotsite #areaCinzaHotsite #produtosHotsite .bloco-produto a p {
+	line-height: 1;
+}
+#hotsite #areaCinzaHotsite #produtosHotsite .bloco-produto a s {
+	font-weight: bold;
+}
+#hotsite #areaCinzaHotsite #produtosHotsite .bloco-produto a b {
+	color: #c8134a;
+	font-size: 1.5rem;
+}
+#hotsite #areaCinzaHotsite #produtosHotsite .bloco-produto a b span {
+	font-size: 2.25rem;
+}
+#hotsite #areaCinzaHotsite #produtosHotsite .bloco-produto a button {
+	background-color: #f6a426;
+	color: white;
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+/* ESPECIAIS ---------- */
+#hotsite #especiaisHotsite {
+	background-color: #47af9e;
+}
+#hotsite #especiaisHotsite .bloco-marcas,
+#hotsite #especiaisHotsite .bloco-lojas {
+	border: 1px solid white;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	overflow: hidden;
+}
+#hotsite #especiaisHotsite .bloco-lojas {
+	background: rgb(255,255,255);
+	background: -moz-radial-gradient(center, ellipse cover, rgb(255,255,255) 0%, rgb(230,230,230) 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, rgb(255,255,255) 0%,rgb(230,230,230) 100%);
+	background: radial-gradient(ellipse at center, rgb(255,255,255) 0%,rgb(230,230,230) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=1 );
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 576px) {
+	#hotsite > header {
+		background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/bg-1-header-mva.jpg);
+		background-position: bottom left;
+		background-repeat: no-repeat;
+	}
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 768px) {
+	#hotsite h2 {
+		font-size: 1.875rem;
+	}
+	#hotsite h3 {
+		font-size: 1.25rem;
+	}
+	#hotsite > header h1 {
+		height: 150px;
+		margin: 32px auto;
+	}
+	#hotsite #categoriasHotsite {
+		background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/bg-lined-circle-orange.png), url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/bg-lined-circle-orange.png);
+		background-position: 69% -44px, 13% 164px;
+		background-repeat: no-repeat;
+		background-size: 166px 166px, 254px 254px;
+	}
+	#hotsite #categoriasHotsite #blocoCategoria1 .bloco-categoria {
+		background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/img-categoria-1.jpg);
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	#hotsite #categoriasHotsite #blocoCategoria1 h3 {
+		border-bottom: 2px solid #e83e8c;
+	}
+	#hotsite #categoriasHotsite #blocoCategoria2 .bloco-categoria {
+		background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/img-categoria-2.jpg);
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	#hotsite #categoriasHotsite #blocoCategoria2 h3 {
+		border-bottom: 2px solid #fd7e14;
+	}
+	#hotsite #categoriasHotsite #blocoCategoria3 .bloco-categoria {
+		background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/img-categoria-3.jpg);
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	#hotsite #categoriasHotsite #blocoCategoria3 h3 {
+		border-bottom: 2px solid #007bff;
+	}
+	#hotsite #categoriasHotsite #blocoCategoria4 .bloco-categoria {
+		background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/img-categoria-4.jpg);
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	#hotsite #categoriasHotsite #blocoCategoria4 h3 {
+		border-bottom: 2px solid #dc3545;
+	}
+	#hotsite #categoriasHotsite #blocoCategoria5 .bloco-categoria {
+		background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/img-categoria-5.jpg);
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	#hotsite #categoriasHotsite #blocoCategoria5 h3 {
+		border-bottom: 2px solid #6f42c1;
+	}
+	#hotsite #categoriasHotsite #blocoCategoria6 .bloco-categoria {
+		background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/img-categoria-6.jpg);
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	#hotsite #categoriasHotsite #blocoCategoria6 h3 {
+		border-bottom: 2px solid #28a745;
+	}
+	#hotsite #categoriasHotsite #blocoCategoria7 .bloco-categoria {
+		background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/img-categoria-7.jpg);
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	#hotsite #categoriasHotsite #blocoCategoria7 h3 {
+		border-bottom: 2px solid #17a2b8;
+	}
+	#hotsite #categoriasHotsite #blocoCategoria8 .bloco-categoria {
+		background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/img-categoria-8.jpg);
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	#hotsite #categoriasHotsite #blocoCategoria8 h3 {
+		border-bottom: 2px solid #6610f2;
+	}
+	#hotsite #mosaicoHotsite h2 {
+		background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/detalhe-lateral-magenta-titulo-mva.png);
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-size: contain;
+		padding-left: 92px !important;
+		text-align: left;
+	}
+	#hotsite .titulo-cinza::after,
+	#hotsite .titulo-branco::after {
+		display: none;
+	}
+	#hotsite .owl-carousel .owl-nav button.owl-prev {left:-20px;}
+	#hotsite .owl-carousel .owl-nav button.owl-next {right:-20px;}
+	#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico {
+		max-width: calc(100% / 3 - 2px);
+	}
+	#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico a {
+		padding: 20px;
+	}
+	#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico .info-bloco-mosaico.remove-margin {
+		margin-top: -31px !important;
+	}
+	#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico .info-bloco-mosaico.remove-margin-double {
+		margin-top: -62px !important;
+	}
+	#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico .info-bloco-mosaico > div span {
+		font-size: 1.5rem;
+	}
+	#hotsite #especiaisHotsite h2 {
+		background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/detalhe-lateral-orange-titulo-mva.png);
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-size: contain;
+		padding-left: 92px;
+		text-align: left;
+	}
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 992px) {
+	#hotsite > header {
+		background-position: bottom center;
+	}
+	#hotsite > header .container {
+		background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/bg-2-header-mva.png);
+		background-position: 50% 100%;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	#hotsite > header h1 {
+		height: 176px;
+	}
+	#hotsite #categoriasHotsite ul a:hover {
+		background: -moz-linear-gradient(left, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+		background: -webkit-linear-gradient(left, rgba(0,0,0,0.15) 0%,rgba(0,0,0,0) 100%);
+		background: linear-gradient(to right, rgba(0,0,0,0.15) 0%,rgba(0,0,0,0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26000000', endColorstr='#00000000',GradientType=1 );
+		color: #333;
+		padding-left: 2rem !important;
+	}
+	#hotsite #areaCinzaHotsite {
+		background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/bg-green-mva.jpg), url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/bg-lined-circle-green-1.png), url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/bg-lined-circle-green-2.png);
+		background-position: bottom center, 80% 890px, 30% 980px;
+		background-repeat: repeat-x, no-repeat, no-repeat;
+	}
+	#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico {
+		max-width: calc(100% / 6 - 2px);
+	}
+	
+	#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico:hover img {
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico:hover {
+		background: rgb(246,164,38);
+		background: -moz-radial-gradient(center, ellipse cover, rgb(246,164,38) 0%, rgb(220,133,40) 100%);
+		background: -webkit-radial-gradient(center, ellipse cover, rgb(246,164,38) 0%,rgb(220,133,40) 100%);
+		background: radial-gradient(ellipse at center, rgb(246,164,38) 0%,rgb(220,133,40) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6a426', endColorstr='#dc8528',GradientType=1 );
+	}
+	#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico .info-bloco-mosaico.remove-margin {
+		margin-top: -9px !important;
+	}
+	#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico .info-bloco-mosaico.remove-margin-double {
+		margin-top: -27px !important;
+	}
+	#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico .info-bloco-mosaico > div span {
+		font-size: 0.875rem;
+	}
+	#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico:hover .info-bloco-mosaico > div span {
+		background-color: #c8134a;
+	}
+	#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico:hover .info-bloco-mosaico .btn-bloco-mosaico button {
+		-webkit-transform: translateX(0px);
+		-ms-transform: translateX(0px);
+		transform: translateX(0px);
+		opacity: 1;
+	}
+	#hotsite #areaCinzaHotsite #produtosHotsite .bloco-produto a:hover {
+		/*box-shadow: 0 0 15px 0 rgba(0,0,0,.25);*/
+	}
+	#hotsite #areaCinzaHotsite #produtosHotsite .bloco-produto a button:hover {
+		background-color: #dc8528;
+	}
+	#hotsite #especiaisHotsite {
+		background-image: url(https://www.kalunga.com.br/HotSite/images/volta-as-aulas/2018-mini/images/bg-lined-circle-orange-2.png);
+		background-position: 65% 70px;
+		background-repeat: no-repeat;
+	}
+	#hotsite #especiaisHotsite .bloco-marcas img:hover,
+	#hotsite #especiaisHotsite .bloco-lojas img:hover {
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 1200px) {
+	#hotsite > header .container {
+		background-size: auto;
+	}
+	#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico .info-bloco-mosaico.remove-margin {
+		margin-top: -21px !important;
+	}
+	#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico .info-bloco-mosaico.remove-margin-double {
+		margin-top: -42px !important;
+	}
+	#hotsite #areaCinzaHotsite #mosaicoHotsite .bloco-mosaico .info-bloco-mosaico > div span {
+		font-size: 1.125rem;
+	}
+}
+
